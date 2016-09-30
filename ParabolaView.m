@@ -28,7 +28,7 @@
 - (void)setupAnmationStart:(CGPoint)start End:(CGPoint)end During:(CGFloat)duration{
     //饿了么型
     CGMutablePathRef path = CGPathCreateMutable();
-    CGFloat cpx = (start.x + end.x) / 2;
+    CGFloat cpx = (start.x + end.x) / 10;
     CGFloat cpy = start.y;
     CGPathMoveToPoint(path, NULL, start.x, start.y);
     CGPathAddQuadCurveToPoint(path, NULL, cpx, cpy, end.x, end.y);

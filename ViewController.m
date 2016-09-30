@@ -63,7 +63,7 @@
 - (void)addAction:(UIButton *)add{
     
     CGRect frame = [add convertRect:self.view.bounds toView:nil];
-    CGPoint startP = CGPointMake(frame.origin.x, frame.origin.y);
+    CGPoint startP = CGPointMake(frame.origin.x+add.frame.size.width/2.0, frame.origin.y+add.frame.size.height/2.0);
     [[ParabolaView new] UsingFrame:add.frame startPoint:startP endPoint:_endP During:.6 Finish:^{
         NSLog(@"抛物线动画结束");
     }];
